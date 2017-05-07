@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Ludum Dare 38 | SmallWorldTransport</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <script src="TemplateData/UnityProgress.js"></script>
+  </head>
+  <body class="template">
+	<div id="readme" >
+	<!- style=" width: 300px; line-height: 38px; color: #333; text-align: center; font-size: 18px;  position: absolute; top: 50%; left: 90px; -webkit-transform: translate( 0, -50%); transform: translate(0, -50%);">
+	Use W/↑ to accelerate<br>A-S/← → to turn.<br><br>
+	Wait on the designated Landpad to pick up / deliver packages.
+	<br><br>
+	Fly Safe !<br>(your ship is fragile)
+	</div>
+    <div class="template-wrap clear">
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+      <br>
+      <div class="logo"></div>
+      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+      <div class="title"> <a href="https://ldjam.com/events/ludum-dare/38/small-world-transport">Ludum Dare Page: SmallWorldTransport</a></div>
+    </div>
+    <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    backgroundColor: "#222C36",
+    splashStyle: "Light",
+    dataUrl: "Release/WebBuild.data",
+    codeUrl: "Release/WebBuild.js",
+    asmUrl: "Release/WebBuild.asm.js",
+    memUrl: "Release/WebBuild.mem",
+  };
+</script>
+<script src="Release/UnityLoader.js"></script>
+  </body>
+</html>
